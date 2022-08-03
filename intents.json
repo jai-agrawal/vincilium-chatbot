@@ -1,0 +1,33 @@
+{"intents": [
+    {"tag": "greeting",
+     "type": "non-task",
+     "patterns": ["Hi", "Hey", "Is anyone there?", "Hello", "Hay", "yo", "what's up"],
+     "responses": ["Hello", "Hi", "Hi there"]
+    },
+    {"tag": "goodbye",
+     "type": "non-task",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nothing"],
+     "responses": ["See you later", "Have a nice day", "Bye! Come back again"]
+    },
+    {"tag": "recon",
+    "type": "task",
+    "patterns": ["Can you list all the recons", "List all the recons", "Show all recons", "Can I see recons"],
+    "responses": ["I understand you want to see all the recons."]
+    },
+    {"tag": "source",
+    "type": "task",
+     "patterns": ["Can you list all the sources", "List all the sources", "Show all sources", "Can I see sources"],
+     "responses": ["I understand you want to see all the sources."]
+    },
+    {"tag": "recon_stats",
+    "patterns": ["Show me today’s stats of my recon", "What’s happening today in my recon?", "Any new trades in my recon",
+    "Has anything been added to my recon", "Can I get updates on my recon", "Can I see what's happening my recon today"],
+    "responses": ["I understand you want details to your recon."]
+    },
+    {"tag": "noanswer",
+     "type": "non-task",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand", "I am still here dude"]
+     }
+]
+}
